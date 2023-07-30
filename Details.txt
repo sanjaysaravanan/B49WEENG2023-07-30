@@ -125,3 +125,7 @@ Next Session:
         nowrap -> shrinks the height of the children to accommodate inside parent
     
     flex-flow: specify both direction and wrapping 
+
+  Media Query
+
+  RWD

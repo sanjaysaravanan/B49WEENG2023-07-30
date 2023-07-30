@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .common {
+      height: 50px;
+      background-color: black;
+      margin: 4px;
+      color: white;
+      font-size: 32px;
+    }
+
+    .unit-px {
+      width: 100px;
+    }
+
+    .unit-pt {
+      width: 100pt;
+    }
+
+    .unit-pc {
+      width: 100pc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Absolute Units</h1>
+
+  <div class="common unit-px">100px</div>
+  <div class="common unit-pt">100pt</div>
+  <div class="common unit-pc">100pc</div>
+
+  <h1>Relative Units</h1>
+
+  <h3>Percent (%)</h3>
+
+  <div class="common" style="width: 100%">100% width</div>
+  <div style="border: 2px solid;width: 250px">
+    <div class="common" style="width: 100%;">
+      100% width
+    </div>
+  </div>
+
+  <h3>View Port Width (vw)</h3>
+  <div class="common" style="width: 100vw">100vw width</div>
+  <div style="border: 2px solid;width: 250px">
+    <div class="common" style="width: 100vw;">
+      100vw width
+    </div>
+  </div>
+
+  <h3>View Port Height (vh)</h3>
+  <div class="common" style="height: 100vh">100vh height</div>
+  <!-- <div style="border: 2px solid;width: 250px">
+    <div class="common" style="width: 100vw;">
+      100vw width
+    </div>
+  </div> -->
+  </div>
+
+  <h3>Empherical Units</h3>
+
+  <h4>em</h4>
+  <h6>1em is the font-size of the parent</h6>
+
+  <div style="font-size: 3em;">B49WEENG in 3em</div>
+
+  <div style="font-size: 4px;">
+    <div style="font-size: 3em;">B49WEENG in 3em</div>
+  </div>
+
+  <h4>rem</h4>
+  <h6>1rem is the font-size of the root parent ( html tags)</h6>
+
+  <div style="font-size: 3rem;">B49WEENG in 3rem</div>
+
+  <div style="font-size: 4px;">
+    <div style="font-size: 3rem;">B49WEENG in 3rem</div>
+  </div>
+</body>
+
+</html>
